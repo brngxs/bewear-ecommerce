@@ -11,6 +11,7 @@ export const useFinishOrder = () => {
   return useMutation({
     mutationKey: getUseFinishOrderMutationKey(),
     mutationFn: async () => {
+      return await finishOrder();
       await finishOrder();
     },
     onSuccess: () => {
