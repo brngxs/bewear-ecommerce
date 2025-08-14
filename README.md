@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Bewear: E-commerce Moderno com Next.js 15
 
-## Getting Started
+Este é um projeto de e-commerce de alta performance, construído com uma stack moderna e totalmente type-safe. O foco principal é a manutenibilidade, escalabilidade e uma experiência de desenvolvimento excepcional, seguindo rigorosos padrões de código e arquitetura.
+Tabela de Conteúdos
 
-First, run the development server:
+    ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    🚀 Stack de Tecnologia
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    📋 Pré-requisitos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ⚙️ Instalação e Configuração
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    📜 Princípios e Convenções
 
-## Learn More
+    🏗️ Arquitetura e Padrões do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+    🤝 Como Contribuir
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    [X] Catálogo de produtos com busca e filtros.
 
-## Deploy on Vercel
+    [X] Carrinho de compras funcional.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    [X] Autenticação de usuários (Login, Cadastro).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    [X] Checkout e integração de pagamento.
+
+    [X] Painel do usuário para gerenciamento de pedidos e dados.
+
+🚀 Stack de Tecnologia
+
+A seleção de tecnologias foi feita para garantir um desenvolvimento robusto, eficiente e moderno.
+
+    Framework: Next.js 15 (App Router)
+
+    Linguagem: TypeScript
+
+    Estilização: Tailwind CSS
+
+    Componentes UI: shadcn/ui
+
+    Banco de Dados: PostgreSQL
+
+    ORM: Drizzle
+
+    Autenticação: BetterAuth
+
+    Formulários: React Hook Form
+
+    Validação de Dados: Zod
+
+    Data Fetching/Client State: React Query
+
+📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em seu ambiente de desenvolvimento:
+
+    Node.js (versão 20.x ou superior)
+
+    NPM/Yarn
+
+    Uma instância do PostgreSQL rodando localmente ou remotamente
+
+⚙️ Instalação e Configuração
+
+Siga os passos abaixo para configurar o ambiente de desenvolvimento local.
+
+    Clone o repositório:
+
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    cd seu-repositorio
+
+    Instale as dependências:
+
+    npm install
+
+    Configure as variáveis de ambiente:
+    Crie uma cópia do arquivo .env.example e renomeie para .env.
+
+    cp .env.example .env
+
+    Preencha o arquivo .env com as suas credenciais, principalmente a DATABASE_URL.
+
+    # Exemplo de .env
+    DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
+
+    Execute as migrações do banco de dados:
+    O Drizzle usará o schema para sincronizar o estado do banco de dados.
+
+    npm db:push
+
+    Inicie o servidor de desenvolvimento:
+
+    npm run dev
+
+    O servidor estará disponível em http://localhost:3000.
+
+📜 Princípios e Convenções
+
+Este projeto segue um conjunto estrito de regras para garantir a qualidade e a consistência do código.
+
+    Clean Code & SOLID: O código deve ser limpo, conciso e seguir os princípios SOLID.
+
+    DRY (Don't Repeat Yourself): Evite a duplicação. Crie abstrações (funções, componentes) quando necessário.
+
+    Tipagem: TypeScript é mandatório em todos os arquivos.
+
+    Nomenclatura:
+
+        Variáveis: camelCase, descritivas e claras (ex: isLoading, hasError).
+
+        Pastas e arquivos: kebab-case (ex: sign-in-form).
